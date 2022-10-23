@@ -21,8 +21,12 @@ body {
     font-family: 'Roboto Regular';
 }
 
-header, #content {
-    padding: clamp(20px, 4vh, 8vh) clamp(20px, 7vw, 16vw);
+header,
+main:not([data-background-image='yes']),
+/* footer's child */
+#company-slogan {
+    padding: clamp(20px, 5vh, 9vh) clamp(20px, 7vw, 16vw);
+
 }
 
 
@@ -45,7 +49,7 @@ header {
     color: black;
 }
 
-#content {
+main {
     flex: 1;
 }
 
@@ -58,7 +62,6 @@ footer>* {
 
 #company-slogan {
     background-color: #252525;
-    padding: clamp(5px, 5vh, 8vh) clamp(10px, 10vw, 20vh);
 }
 
 #company-name {
@@ -71,5 +74,5 @@ footer>* {
 
 #copyright-container {
     background-color: #191919;
-    padding: clamp(18px, 2.5vh, 8vh) 0;
+    padding: 20px;
 }
