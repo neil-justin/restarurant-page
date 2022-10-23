@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../assets/roboto-fonts/Roboto-Regular.ttf') format('opentype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: 1px solid yellow;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Roboto Regular';
+}
+
+header {
+    background-color: #c58bb1;
+}
+
+#tablist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    list-style-type: none;
+    min-height: 90px;
+}
+
+.main-nav-li {
+    display: inline;
+    font-size: 1.25rem;
+}
