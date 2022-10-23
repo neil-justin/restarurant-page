@@ -22,7 +22,7 @@ body {
 }
 
 header, #content {
-    padding: clamp(5px, 5vh, 8vh) clamp(10px, 7vw, 16vw);
+    padding: clamp(20px, 4vh, 8vh) clamp(20px, 7vw, 16vw);
 }
 
 
