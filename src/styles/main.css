@@ -22,7 +22,6 @@ body {
 }
 
 header,
-main[data-has-background-image='no'],
 /* footer's child */
 #company-slogan {
     padding: clamp(20px, 5vh, 9vh) clamp(20px, 7vw, 16vw);
@@ -57,9 +56,19 @@ main {
     flex: 1 600px;
 }
 
-main[data-has-background-image='yes'] {
+main[data-tab='Home'] {
     background-image: url(../assets/main-background-image.jpg);
     background-size: cover;
+}
+
+main:not([data-tab='Home']) {
+    padding: clamp(50px, 5vh, 10vh) clamp(35px, 10vw, 20vw);
+    background-color: hsl(210deg 17% 93%);
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 footer>* {
