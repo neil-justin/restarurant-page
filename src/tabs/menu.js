@@ -39,20 +39,20 @@ function createItemCards(div) {
         itemHyperlinkElem.classList.add('item-link');
         itemCardElem.appendChild(itemHyperlinkElem);
 
-        const h3 = document.createElement('h3');
-        h3.classList.add('item-name');
-        h3.textContent = Object.keys(doughnuts)[i];
-        const doughnut = h3.textContent;
-        itemHyperlinkElem.appendChild(h3);
+        const itemNameElem = document.createElement('h3');
+        itemNameElem.classList.add('item-name');
+        itemNameElem.textContent = Object.keys(doughnuts)[i];
+        const doughnut = itemNameElem.textContent;
+        itemHyperlinkElem.appendChild(itemNameElem);
 
-        const img = document.createElement('img');
-        img.src = `${doughnuts[doughnut]}`;
-        img.classList.add('item-img');
-        itemHyperlinkElem.insertBefore(img, h3);
+        const itemImgElem = document.createElement('img');
+        itemImgElem.src = `${doughnuts[doughnut]}`;
+        itemImgElem.classList.add('item-img');
+        itemHyperlinkElem.insertBefore(itemImgElem, itemNameElem);
 
-        const para = document.createElement('p')
-        para.classList.add('item-price');
-        para.textContent = 'USD 1.25'
-        itemHyperlinkElem.appendChild(para);
+        const itemPriceElem = document.createElement('p')
+        itemPriceElem.classList.add('item-price');
+        itemPriceElem.textContent = 'USD 1.25'
+        itemHyperlinkElem.appendChild(itemPriceElem);
     }
 }
