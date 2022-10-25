@@ -1,17 +1,17 @@
 import displayHomeTabContents from "./tabs/home";
 import displayMenuTabContents from "./tabs/menu";
+import displayContactTabContents from "./tabs/contact";
 
 const mainElem = document.querySelector('main');
 
 let currentTab = displayHomeTabContents(mainElem);
 
 function clearTabContents(openTab) {
-    if (currentTab === 'Home') {
-        /* Setting the attribute's value into 'no' removes the background
-        image of this element and toggles a selector in main.css file that
-        adds a padding into this element */
+        /* Setting the attribute's value removes the background
+        image of <main> element when the opened tab is the Home tab. */
         mainElem.setAttribute('data-tab', openTab);
-    } else {
+        
+    if (currentTab !== 'Home') {
         /* A method that removes the element's children if no parameter is
         specified. It was said to be a faster approach of removing element's
         children hence I go with it. */
@@ -26,16 +26,15 @@ tablist.addEventListener('click', (e) => {
 
         switch (e.target.textContent) {
             case 'Home':
-                console.log(e.target.textContent);
                 currentTab = displayHomeTabContents(mainElem);
                 break;
             case 'Menu':
-                console.log(e.target.textContent);
                 currentTab = displayMenuTabContents(mainElem);
                 break;
             case 'Contact':
-                console.log(e.target.textContent);
+                currentTab = displayContactTabContents(mainElem);
         }
 
+        console.log(currentTab);
     }
 })

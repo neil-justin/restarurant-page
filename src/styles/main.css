@@ -52,7 +52,8 @@ header {
     text-decoration: 1px underline;
 }
 
-main {
+main[data-tab='Home'],
+main[data-tab='Menu'] {
     flex: 1 600px;
 }
 
