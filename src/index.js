@@ -5,12 +5,12 @@ const mainElem = document.querySelector('main');
 
 let currentTab = displayHomeTabContents(mainElem);
 
-function clearTabContents(newTab) {
+function clearTabContents(openTab) {
     if (currentTab === 'Home') {
         /* Setting the attribute's value into 'no' removes the background
         image of this element and toggles a selector in main.css file that
         adds a padding into this element */
-        mainElem.setAttribute('data-tab', newTab);
+        mainElem.setAttribute('data-tab', openTab);
     } else {
         /* A method that removes the element's children if no parameter is
         specified. It was said to be a faster approach of removing element's
