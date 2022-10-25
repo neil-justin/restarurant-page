@@ -14,7 +14,7 @@ export default function displayMenuTabContents(mainElem) {
     menuElem.setAttribute('id', 'menu-list');
     mainElem.appendChild(menuElem);
 
-    createMenuCards(menuElem)
+    createItemCards(menuElem)
 
     return mainElem.dataset.tab;
 }
@@ -28,7 +28,7 @@ const doughnuts = {
     'White Doughnut': whiteDoughnutImg,
 }
 
-function createMenuCards(div) {
+function createItemCards(div) {
     for (let i = 0; i < Object.keys(doughnuts).length; i++) {
         const itemCardElem = document.createElement('section');
         itemCardElem.setAttribute(`data-item`, i);
