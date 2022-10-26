@@ -1,9 +1,9 @@
-import chocolateDonutImg from "../assets/doughnut-images/chocolate-doughnut.png";
-import pinkDoughnutImg from "../assets/doughnut-images/pink-doughnut.png";
-import purpleDoughnut2Img from "../assets/doughnut-images/purple-doughnut-2.png";
-import purpleDoughnutImg from "../assets/doughnut-images/purple-doughnut.png";
-import whiteChocolateDoughnutImg from "../assets/doughnut-images/white-chocolate-doughnut.png";
-import whiteDoughnutImg from "../assets/doughnut-images/white-doughnut.png";
+import chocolateDonutImg from "../../dist/assets/doughnut-images/chocolate-doughnut.png"
+import pinkDoughnutImg from "../../dist/assets/doughnut-images/pink-doughnut.png"
+import purpleDoughnut2Img from "../../dist/assets/doughnut-images/purple-doughnut-2.png";
+import purpleDoughnutImg from "../../dist/assets/doughnut-images/purple-doughnut.png";
+import whiteChocolateDoughnutImg from "../../dist/assets/doughnut-images/white-chocolate-doughnut.png";
+import whiteDoughnutImg from "../../dist/assets/doughnut-images/white-doughnut.png";
 
 export default function displayMenuTabContents(mainElem) {
     const itemsHeadingElem = document.createElement('h2');
