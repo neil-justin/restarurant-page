@@ -29,8 +29,8 @@ header,
 }
 
 header {
-    background-color: rgb(37, 37, 37);
-    border-bottom: 1px solid #e4e7ea;
+    background-color: white;
+    border-bottom: 3px solid #e4e7ea;
 }
 
 #tablist {
@@ -44,7 +44,7 @@ header {
 .main-nav-li {
     display: inline;
     font-size: 1.25rem;
-    color: white;
+    color: black;
 }
 
 .main-nav-li:hover {

@@ -19,6 +19,7 @@ main[data-tab='Contact'] p {
     display: grid;
     row-gap: 20px;
     padding: clamp(20px, 4%, 10%);
-    border: 2px solid black;
+    border: 2px solid lightgray;
     border-radius: 15px;
+    background-color: white;
 }
