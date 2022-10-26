@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../assets/roboto-fonts/Roboto-Regular.ttf') format('opentype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 62.5%;
+    font-family: 'Roboto Regular';
+}
+
+header,
+/* footer's child */
+#company-slogan {
+    padding: clamp(20px, 5vh, 9vh) clamp(20px, 7vw, 16vw);
+
+}
+
+header {
+    background-color: white;
+    border-bottom: 3px solid #e4e7ea;
+}
+
+#tablist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    list-style-type: none;
+}
+
+.main-nav-li {
+    display: inline;
+    font-size: 1.25rem;
+    color: black;
+}
+
+.main-nav-li:hover {
+    cursor: pointer;
+    text-decoration: 1px underline;
+}
+
+main[data-tab='Home'],
+main[data-tab='Menu'] {
+    flex: 1 600px;
+}
+
+main[data-tab='Home'] {
+    background-image: url(../assets/main-background-image.jpg);
+    background-size: cover;
+}
+
+main:not([data-tab='Home']) {
+    padding: clamp(50px, 5vh, 10vh) clamp(35px, 10vw, 20vw);
+    background-color: hsl(210deg 17% 93%);
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+footer>* {
+    display: grid;
+    justify-items: center;
+    font-size: 1rem;
+    color: #f8f9fa;
+}
+
+#company-slogan {
+    background-color: #252525;
+}
+
+#company-name {
+    margin-bottom: 20px;
+}
+
+#company-description {
+    text-align: center;
+}
+
+#copyright-container {
+    background-color: #191919;
+    padding: 20px;
+}

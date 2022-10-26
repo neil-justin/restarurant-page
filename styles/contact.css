@@ -1,0 +1,25 @@
+main[data-tab='Contact'] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main[data-tab='Contact'] p {
+    font-size: 1rem;
+}
+
+.contact-info-headings {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+#contact-info-container {
+    max-width: 500px;
+    display: grid;
+    row-gap: 20px;
+    padding: clamp(20px, 4%, 10%);
+    border: 2px solid lightgray;
+    border-radius: 15px;
+    background-color: white;
+}
